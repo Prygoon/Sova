@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sova</string>
+    <string name="show_owl">Показать сову</string>
+    <string name="hide_owl">Спрятать сову</string>
+    <string name="owl_image">owl_image</string>
+    <string name="action_settings">Settings</string>
+    <string name="owl1">Первая сова</string>
+    <string name="owl2">Вторая сова</string>
+    <string name="owl3">Третья сова</string>
+
+</resources>
