@@ -20,8 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
         button1 = (Button) findViewById(R.id.button1);
         button1.setText(R.string.show_owl);
-        owlImage = (ImageView) findViewById(R.id.imageView);
+
+        owlImage = (ImageView) findViewById(R.id.imageView3);
         owlImage.setVisibility(View.INVISIBLE);
+        owlImage = (ImageView) findViewById(R.id.imageView2);
+        owlImage.setVisibility(View.INVISIBLE);
+        owlImage = (ImageView) findViewById(R.id.imageView1);
+        owlImage.setVisibility(View.INVISIBLE);
+
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -46,9 +52,24 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
 
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_owl1) {
+            owlImage.setVisibility(View.INVISIBLE);
+            button1.setText(R.string.show_owl);
+            owlImage = (ImageView) findViewById(R.id.imageView1);
         }
+
+        if (id == R.id.action_owl2) {
+            owlImage.setVisibility(View.INVISIBLE);
+            button1.setText(R.string.show_owl);
+            owlImage = (ImageView) findViewById(R.id.imageView2);
+        }
+
+        if (id == R.id.action_owl3) {
+            owlImage.setVisibility(View.INVISIBLE);
+            button1.setText(R.string.show_owl);
+            owlImage = (ImageView) findViewById(R.id.imageView3);
+        }
+
         return super.onOptionsItemSelected(item);
     }
 }

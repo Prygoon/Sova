@@ -9,14 +9,28 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.prygoon.NewSova.MainActivity">
+    tools:context="com.example.prygoon.newsova.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/owl3"
+        android:id="@+id/imageView3"
+        android:contentDescription="@string/owl_image3" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/owl2"
+        android:id="@+id/imageView2"
+        android:contentDescription="@string/owl_image2" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/owl1"
-        android:id="@+id/imageView"
-        android:contentDescription="@string/owl_image" />
+        android:id="@+id/imageView1"
+        android:contentDescription="@string/owl_image1" />
 
     <Button
         android:id="@+id/button1"
